@@ -1,8 +1,9 @@
 <html>
 
 <head>
+
   <script src="https://cdn.jsdelivr.net/gh/commeunepartition/corpus@master/jquery.js"></script>
-<script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 
   <style type="text/css">
     @font-face {
@@ -10,26 +11,48 @@
       src: url(RobotoCondensed-Regular.ttf);
     }
     * {
-     font-family: mainfont;
-   }
-  img {
-    max-height: 1000px;
-    max-width: 1000px;
-  }
-  iframe {
-    width: 80%;
-    height: 80%;
-  }
+      font-family: mainfont;
+    }
+    img {
+      max-height: 1000px;
+      max-width: 1000px;
+    }
+    iframe {
+      width: 80%;
+      height: 80%;
+    }
     html {
       scroll-behavior: smooth;
+    }
+    titre {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      font-size: 157%;
+      color: #43173b;
+    }
+    square {
+      display:inline-block;
+      height: 12px;
+      width: 7px;
+      background-color: black;
     }
     /*style des liens visités*/
     a:visited {
       color: black
     }
+    a:hover {
+      background-color: #d7ff00
+    }
+    a:hover > square {
+      background-color: #d7ff00
+    }
+    .active {
+      background-color: #d7ff00
+    }
     /* main collé à droite et prend un pourcentage de la largeur*/
     #main {
-      width: 85%;
+      width: 82%;
       float: right;
     }
     #main div.yt {
@@ -37,8 +60,8 @@
       padding-bottom: 50px;
     }
     #main div.vi {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-left: 50px;
+      padding-bottom: 100px;
     }
     #nav {
       position: relative;
@@ -54,38 +77,38 @@
       outline: 0;
       text-decoration: none;
     }
-    #nav a:hover {
-      background-color: #c3e0c8;
-    }
-    #nav a.active {
-      background-color: #c3e0c8
-    }
-    #titre {
-      margin-top: 0px;
-      margin-bottom: 15px;
-      margin-left: 0px;
-      font-size: 100%;
-      color: #c3e0c8;
-    }
     /*blank space at bottom*/
     #end {
       padding-top: 600px;
     }
-
   </style>
 
 </head>
 
-
 <body>
+
+  <script>
+  /*highlights current link on scroll*/
+  $(window).on('scroll', function() {
+    $('div[id]').each(function() {
+      if($(window).scrollTop() + 200 >= $(this).position().top) {
+        var id = $(this).attr('id');
+        $('#nav nav square').removeClass('active');
+        $('#nav nav a[href=#'+ id +'] square').addClass('active');
+      }
+    });
+  });
+  $('#nearestStaticContainer').on('contextmenu', 'img', function(e){
+    return false;
+  });
+  </script>
 
   <!--section main : texte/images-->
   <section id="main">
-
       <div class="yt" id="1"><img src="media/brown.jpg"><figcaption><figcaption></div>
       <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/co0NOk8tUG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="yt" id="2"><img src="media/cartridge2.jpg"><figcaption><figcaption></div>
+      <div id="2"><img src="media/cartridge2.jpg"><figcaption><figcaption></div>
       <div class="yt"><img src="media/cartridge1.jpg"><figcaption><figcaption></figure></div>
       <div class="yt"><img src="media/cartridge3.jpg"><figcaption><figcaption></figure></div>
       <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/H_qgsOLnmkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -141,31 +164,30 @@
   <!--section nav : liens-->
   <aside id="nav">
       <nav>
-          <div id="titre">C O R P U S</div>
-          <a href="#1">Earle Brown - December 1952</a>
-          <a href="#2">John Cage - Cartridge Music</a>
-          <a href="#3">Thierry Coduys - Iannix</a>
-          <a href="#4">Viking Eggeling - Symphonie Diagonale</a>
-          <a href="#5">Morton Feldman - Projection 1</a>
-          <a href="#6">Rama Gottfried - Symbolist</a>
-          <a href="#7">Paul Klee</a>
-          <a href="#8">Christina Kubisch - Cloud</a>
-          <a href="#9">Thor Magnusson - Threnoscope</a>
-          <a href="#10">Thor Magnusson - ixi software</a>
-          <a href="#11">Thor Magnusson - ixi lang</a>
-          <a href="#12">Norman McLaren - Synchromy</a>
-          <a href="#13">Max Neuhaus</a>
-          <a href="#14">Laetitia Sonami - Lady's Glove</a>
-          <a href="#15">Laurie Spiegel - Music Mouse</a>
-          <a href="#16">Sutartinés</a>
-          <a href="#17">Enrique Tomás - Tangible Scores</a>
-          <a href="#18">Iannis Xenakis - UPIC</a>
+          <titre>C O R P U S</titre>
+          <a href="#1">Earle Brown - December 1952 <square></square></a>
+          <a href="#2">John Cage - Cartridge Music <square></square></a>
+          <a href="#3">Thierry Coduys - Iannix <square></square></a>
+          <a href="#4">Viking Eggeling - Symphonie Diagonale <square></square></a>
+          <a href="#5">Morton Feldman - Projection 1 <square></square></a>
+          <a href="#6">Rama Gottfried - Symbolist <square></square></a>
+          <a href="#7">Paul Klee <square></square></a>
+          <a href="#8">Christina Kubisch - Cloud <square></square></a>
+          <a href="#9">Thor Magnusson - Threnoscope <square></square></a>
+          <a href="#10">Thor Magnusson - ixi software <square></square></a>
+          <a href="#11">Thor Magnusson - ixi lang <square></square></a>
+          <a href="#12">Norman McLaren - Synchromy <square></square></a>
+          <a href="#13">Max Neuhaus <square></square></a>
+          <a href="#14">Laetitia Sonami - Lady's Glove <square></square></a>
+          <a href="#15">Laurie Spiegel - Music Mouse <square></square></a>
+          <a href="#16">Sutartinés <square></square></a>
+          <a href="#17">Enrique Tomás - Tangible Scores <square></square></a>
+          <a href="#18">Iannis Xenakis - UPIC <square></square></a>
           <a href="#19"></a>
           <a href="#20"></a>
       </nav>
   </aside>
 
 </body>
-
 
 </html>

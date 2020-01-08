@@ -13,8 +13,8 @@
      font-family: mainfont;
    }
   img {
-    height: auto;
-    width: 600px;
+    max-height: 1000px;
+    max-width: 1000px;
   }
   iframe {
     width: 80%;
@@ -29,12 +29,16 @@
     }
     /* main collé à droite et prend un pourcentage de la largeur*/
     #main {
-      width: 80%;
+      width: 85%;
       float: right;
     }
-    /*hauteur de chaque main*/
-    #main div.target {
-      height: 1000px;
+    #main div.yt {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    #main div.vi {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     #nav {
       position: relative;
@@ -57,18 +61,18 @@
       background-color: #c3e0c8
     }
     #titre {
-      margin-top: 20px;
-      margin-bottom: 100px;
-      margin-left: 35px;
-      font-size: 200%;
+      margin-top: 0px;
+      margin-bottom: 15px;
+      margin-left: 0px;
+      font-size: 100%;
+      color: #c3e0c8;
     }
     /*blank space at bottom*/
     #end {
       padding-top: 600px;
     }
+
   </style>
-
-
 
 </head>
 
@@ -78,56 +82,57 @@
   <!--section main : texte/images-->
   <section id="main">
 
-      <div id="titre">CORPUS</div>
+      <div class="yt" id="1"><img src="media/brown.jpg"><figcaption><figcaption></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/co0NOk8tUG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="1"><figure><img src="media/cartridge2.jpg"><figcaption><figcaption></figure></div>
-        <img src="media/cartridge1.jpg"><figcaption><figcaption></figure></div><br>
-        <img src="media/cartridge3.jpg"><figcaption><figcaption></figure></div><br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/H_qgsOLnmkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://player.vimeo.com/video/59864306?color=c3e0c8&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="yt" id="2"><img src="media/cartridge2.jpg"><figcaption><figcaption></div>
+      <div class="yt"><img src="media/cartridge1.jpg"><figcaption><figcaption></figure></div>
+      <div class="yt"><img src="media/cartridge3.jpg"><figcaption><figcaption></figure></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/H_qgsOLnmkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="vi"><iframe src="https://player.vimeo.com/video/59864306?color=c3e0c8&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
-      <div class="target" id="2"><iframe width="560" height="315" src="https://www.youtube.com/embed/t3nd9FpRMpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><figcaption></div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cVS4-Dh3S-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="yt" id="3"><iframe width="560" height="315" src="https://www.youtube.com/embed/Yv5jWBa1lzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/y873GNLEtrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="3"><iframe width="560" height="315" src="https://www.youtube.com/embed/JMWP0jY4FK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><figcaption></figure></div>
+      <div class="yt" id="4"><iframe width="560" height="315" src="https://www.youtube.com/embed/KpCI67GMe7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="4"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmqEciI_O4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt" id="5"><img src="media/projection1.jpg"><figcaption><figcaption></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/8hsj4CKBxoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="5"><iframe width="560" height="315" src="https://www.youtube.com/embed/C8GqbS2w_Lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div id="6"><iframe width="560" height="315" src="https://medias.ircam.fr/embed/media/x7351a8" frameborder="0" allowfullscreen></iframe></div>
 
-      <div class="target" id="6"><iframe width="560" height="315" src="https://www.youtube.com/embed/D-mmEvGOopk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt" id="7"><img src="media/villedereve1921.jpg"><figcaption><figcaption></div>
+      <div class="yt"><img src="media/blancpolyphoniquementserti1930.jpg"><figcaption><figcaption></div>
+      <div class="yt"><img src="media/ancientsound1924.jpg"><figcaption><figcaption></div>
+      <div class="yt"><img src="media/thewindow1922.jpg"><figcaption><figcaption></div>
 
-      <div class="target" id="7"><iframe src="https://player.vimeo.com/video/142229848?color=c3e0c8&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div class="yt" id="8"><iframe width="560" height="315" src="https://www.youtube.com/embed/mpSMeeBkybY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="8"><iframe width="560" height="315" src="https://www.youtube.com/embed/Yv5jWBa1lzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt" id="9"><iframe width="560" height="315" src="https://www.youtube.com/embed/JMWP0jY4FK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><figcaption></figure></div>
 
-      <div class="target" id="9"><img src="media/brown.jpg"><figcaption><figcaption></div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/co0NOk8tUG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="yt" id="10"><iframe width="560" height="315" src="https://www.youtube.com/embed/t3nd9FpRMpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><figcaption></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/cVS4-Dh3S-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="10"><iframe width="560" height="315" src="https://www.youtube.com/embed/7_Gu0qDAys0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt" id="11"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmqEciI_O4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="11"><img src="media/projection1.jpg"><figcaption><figcaption></div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8hsj4CKBxoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="yt" id="12"><iframe width="560" height="315" src="https://www.youtube.com/embed/UmSzc8mBJCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="12"><img src="media/villedereve1921.jpg"><figcaption><figcaption></div>
-        <img src="media/blancpolyphoniquementserti1930.jpg"><figcaption><figcaption>
-        <img src="media/ancientsound1924.jpg"><figcaption><figcaption>
-        <img src="media/thewindow1922.jpg"><figcaption><figcaption>
+      <div class="yt" id="13"><img src="media/southweststairwell1992.jpg"><figcaption><figcaption></div>
+      <div class="yt"><img src="media/fanmusic1993.jpg"><figcaption><figcaption></div>
 
-      <div class="target" id="13"><iframe width="560" height="315" src="https://www.youtube.com/embed/mpSMeeBkybY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div  class="yt" id="14"><iframe width="560" height="315" src="https://www.youtube.com/embed/C8GqbS2w_Lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div  class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/uASi3bkf6is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div  class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/nEkufXDb-Ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="14"><iframe width="560" height="315" src="https://www.youtube.com/embed/UmSzc8mBJCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt" id="15"><iframe width="560" height="315" src="https://www.youtube.com/embed/D-mmEvGOopk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="15"><img src="media/southweststairwell1992.jpg"><figcaption><figcaption></div>
-        <img src="media/fanmusic1993.jpg"><figcaption><figcaption>
+      <div class="yt" id="16"><iframe width="560" height="315" src="https://www.youtube.com/embed/khJmKRIdH9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/4Z8sdPfAgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-      <div class="target" id="16"><iframe width="560" height="315" src="https://www.youtube.com/embed/KpCI67GMe7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="vi" id="17"><iframe src="https://player.vimeo.com/video/142229848?color=c3e0c8&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
-      <div class="target" id="17"><iframe width="560" height="315" src="https://www.youtube.com/embed/khJmKRIdH9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4Z8sdPfAgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <div class="target" id="18"><iframe width="560" height="315" src="https://medias.ircam.fr/embed/media/x7351a8" frameborder="0" allowfullscreen></iframe></div>
-
+      <div class="yt" id="18"><iframe width="560" height="315" src="https://www.youtube.com/embed/7_Gu0qDAys0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/lNPWub-MNxg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
       <div id="end"></div>
 
@@ -136,27 +141,27 @@
   <!--section nav : liens-->
   <aside id="nav">
       <nav>
-          <a href="#1">John Cage - Cartridge Music</a>
-          <a href="#2">Thor Magnusson - ixi software</a>
-          <a href="#3">Thor Magnusson - Threnoscope</a>
-          <a href="#4">Thor Magnusson - ixi lang</a>
-          <a href="#5">Laetitia Sonami - Lady's Glove</a>
-          <a href="#6">Laurie Spiegel - Music Mouse</a>
-          <a href="#7">Enrique Tomás - Tangible Scores</a>
-          <a href="#8">Thierry Coduys - Iannix</a>
-          <a href="#9">Earle Brown - December 1952</a>
-          <a href="#10">Iannis Xenakis - UPIC</a>
-          <a href="#11">Morton Feldman - Projection 1</a>
-          <a href="#12">Paul Klee</a>
-          <a href="#13">Christina Kubisch - Cloud</a>
-          <a href="#14">Norman McLaren - Synchromy</a>
-          <a href="#15">Max Neuhaus</a>
-          <a href="#16">Viking Eggeling - Symphonie Diagonale</a>
-          <a href="#17">Sutartinés</a>
-          <a href="#18">Rama Gottfried - Symbolist</a>
+          <div id="titre">C O R P U S</div>
+          <a href="#1">Earle Brown - December 1952</a>
+          <a href="#2">John Cage - Cartridge Music</a>
+          <a href="#3">Thierry Coduys - Iannix</a>
+          <a href="#4">Viking Eggeling - Symphonie Diagonale</a>
+          <a href="#5">Morton Feldman - Projection 1</a>
+          <a href="#6">Rama Gottfried - Symbolist</a>
+          <a href="#7">Paul Klee</a>
+          <a href="#8">Christina Kubisch - Cloud</a>
+          <a href="#9">Thor Magnusson - Threnoscope</a>
+          <a href="#10">Thor Magnusson - ixi software</a>
+          <a href="#11">Thor Magnusson - ixi lang</a>
+          <a href="#12">Norman McLaren - Synchromy</a>
+          <a href="#13">Max Neuhaus</a>
+          <a href="#14">Laetitia Sonami - Lady's Glove</a>
+          <a href="#15">Laurie Spiegel - Music Mouse</a>
+          <a href="#16">Sutartinés</a>
+          <a href="#17">Enrique Tomás - Tangible Scores</a>
+          <a href="#18">Iannis Xenakis - UPIC</a>
           <a href="#19"></a>
           <a href="#20"></a>
-
       </nav>
   </aside>
 

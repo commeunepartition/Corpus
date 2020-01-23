@@ -35,19 +35,19 @@
     square {
       display:inline-block;
       height: 12px;
-      width: 3px;
-      background-color: black;
+      width: 0px;
+      background-color: #B0FF1B;
       transition: 0.03s;
+    }
+    #sq2 {
+      background-color: white;
+      width: 3px;
     }
     /*style des liens visités*/
     a:visited {
       color: black
     }
-    a:hover {
-
-
-    }
-    a:hover > square {
+    a:hover > square#sq2 {
       background-color: #B0FF1B;
     }
     .active {
@@ -112,8 +112,8 @@
     $('div[id]').each(function() {
       if($(window).scrollTop() + 200 >= $(this).position().top) {
         var id = $(this).attr('id');
-        $('#nav nav square').removeClass('active');
-        $('#nav nav a[href=#'+ id +'] square').addClass('active');
+        $('#nav nav square#sq1').removeClass('active');
+        $('#nav nav a[href=#'+ id +'] square#sq1').addClass('active');
       }
     });
   });
@@ -194,24 +194,24 @@ function closeLay() {
   <aside id="nav">
       <nav>
           <div class="titre">C O R P U S</div>
-          <a href="#1">Earle Brown - December 1952 <square></square></a>
-          <a href="#2">John Cage - Cartridge Music <square></square></a>
-          <a href="#3">Thierry Coduys - Iannix <square></square></a>
-          <a href="#4">Viking Eggeling - Symphonie Diagonale <square></square></a>
-          <a href="#5">Morton Feldman - Projection 1 <square></square></a>
-          <a href="#6">Rama Gottfried - Symbolist <square></square></a>
-          <a href="#7">Paul Klee <square></square></a>
-          <a href="#8">Christina Kubisch - Cloud <square></square></a>
-          <a href="#9">Thor Magnusson - Threnoscope <square></square></a>
-          <a href="#10">Thor Magnusson - ixi software <square></square></a>
-          <a href="#11">Thor Magnusson - ixi lang <square></square></a>
-          <a href="#12">Norman McLaren - Synchromy <square></square></a>
-          <a href="#13">Max Neuhaus <square></square></a>
-          <a href="#14">Laetitia Sonami - Lady's Glove <square></square></a>
-          <a href="#15">Laurie Spiegel - Music Mouse <square></square></a>
-          <a href="#16">Sutartinés <square></square></a>
-          <a href="#17">Enrique Tomás - Tangible Scores <square></square></a>
-          <a href="#18">Iannis Xenakis - UPIC <square></square></a>
+          <a href="#1"><square id=sq2></square> Earle Brown - December 1952 <square id=sq1></square></a>
+          <a href="#2"><square id=sq2></square> John Cage - Cartridge Music <square id=sq1></square></a>
+          <a href="#3"><square id=sq2></square> Thierry Coduys - Iannix <square id=sq1></square></a>
+          <a href="#4"><square id=sq2></square> Viking Eggeling - Symphonie Diagonale <square id=sq1></square></a>
+          <a href="#5"><square id=sq2></square> Morton Feldman - Projection 1 <square id=sq1></square></a>
+          <a href="#6"><square id=sq2></square> Rama Gottfried - Symbolist <square id=sq1></square></a>
+          <a href="#7"><square id=sq2></square> Paul Klee <square id=sq1></square></a>
+          <a href="#8"><square id=sq2></square> Christina Kubisch - Cloud <square id=sq1></square></a>
+          <a href="#9"><square id=sq2></square> Thor Magnusson - Threnoscope <square id=sq1></square></a>
+          <a href="#10"><square id=sq2></square> Thor Magnusson - ixi software <square id=sq1></square></a>
+          <a href="#11"><square id=sq2></square> Thor Magnusson - ixi lang <square id=sq1></square></a>
+          <a href="#12"><square id=sq2></square> Norman McLaren - Synchromy <square id=sq1></square></a>
+          <a href="#13"><square id=sq2></square> Max Neuhaus <square id=sq1></square></a>
+          <a href="#14"><square id=sq2></square> Laetitia Sonami - Lady's Glove <square id=sq1></square></a>
+          <a href="#15"><square id=sq2></square> Laurie Spiegel - Music Mouse <square id=sq1></square></a>
+          <a href="#16"><square id=sq2></square> Sutartinés <square id=sq1></square></a>
+          <a href="#17"><square id=sq2></square> Enrique Tomás - Tangible Scores <square id=sq1></square></a>
+          <a href="#18"><square id=sq2></square> Iannis Xenakis - UPIC <square id=sq1></square></a>
           <a href="#19"></a>
           <a href="#20"></a>
       </nav>
